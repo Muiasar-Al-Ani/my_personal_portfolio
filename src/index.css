@@ -40,3 +40,9 @@ a {
     justify-content: flex-end;
   }
 }
+
+@media (orientation: portrait) {
+    .my-image{
+        margin-bottom: 20px;
+    }
+}

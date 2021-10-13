@@ -28,7 +28,7 @@ const AboutMe = () => {
     <main>
       <div className="container row home-main mx-auto mt-5">
         <div className="col-lg-6 col-md-12">
-          <h1 className="job-text my-5 divEl">
+          <h1 className="job-text my-lg-5 divEl">
             <span>About Me</span>
           </h1>
           <h6 className="description-text divEl">
@@ -72,7 +72,7 @@ const AboutMe = () => {
 
         <div className="col-lg-1 col-md-2 col-sm-3 text-center">
           <img
-            src="./assets/icons/html.svg"
+            src="./assets/icons/css.svg"
             className="shadow-separation"
             width="50px"
             alt="CSS3"
@@ -206,7 +206,17 @@ const AboutMe = () => {
             width="50px"
             alt="PHP"
           />
-          <p className="py-2 ">PHP</p>
+          <p className="py-2 mb-1">PHP</p>
+        </div>
+
+        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
+          <img
+            src="./assets/icons/python.svg"
+            className="shadow-separation"
+            width="50px"
+            alt="Python"
+          />
+          <p className="py-2 mb-1">Python</p>
         </div>
       </div>
     </main>

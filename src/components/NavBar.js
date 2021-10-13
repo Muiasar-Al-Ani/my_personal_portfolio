@@ -1,10 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
-const NavBar = ({ currentPage, handlePageChange }) => {
+const NavBar = ({ currentPage, handlePageChange}) => {
   return (
     <div>
       <div className="row">
@@ -13,12 +11,23 @@ const NavBar = ({ currentPage, handlePageChange }) => {
             <Navbar className="px-3" variant="dark" expand="lg" sticky="top">
               <Navbar.Brand href="#home">Muiasar Al Ani</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav " className="float-to-right">
+              <Navbar.Collapse id="basic-navbar-nav" className="float-to-right">
                 <Nav className="mr-auto ">
-                  <Nav.Link className={currentPage === 'Home' ? 'active active-page-link' : 'active'} onClick={() => handlePageChange('Home')}>
+                  <Nav.Link
+                    className={
+                      currentPage === "Home"
+                        ? "active active-page-link"
+                        : "active"
+                    }
+                    onClick={() => handlePageChange("Home")} >
                     Home
                   </Nav.Link>
-                  <Nav.Link className="active" href="/work">
+                  <Nav.Link className={
+                      currentPage === "Work"
+                        ? "active active-page-link"
+                        : "active"
+                    }
+                    onClick={() => handlePageChange("Work")}>
                     Work
                   </Nav.Link>
                   <Nav.Link
@@ -28,14 +37,32 @@ const NavBar = ({ currentPage, handlePageChange }) => {
                   >
                     LinkedIn
                   </Nav.Link>
-                  <Nav.Link className={currentPage === 'AboutMe' ? 'active active-page-link' : 'active'} onClick={() => handlePageChange('AboutMe')}>
+                  <Nav.Link
+                    className="active"
+                    href="https://github.com/Muiasar-Al-Ani"
+                    target="_blank"
+                  >
+                    GitHub
+                  </Nav.Link>
+                  <Nav.Link
+                    className={
+                      currentPage === "AboutMe"
+                        ? "active active-page-link"
+                        : "active"
+                    }
+                    onClick={() => handlePageChange("AboutMe")}
+                  >
                     About Me
                   </Nav.Link>
                   <Nav.Link className="active" href="/contact-me">
                     Contact Me
                   </Nav.Link>
-                  <Nav.Link className="active" href="/assets/images/Muiasar-Al-Ani-Resume.pdf" download>
-                  Download Resume
+                  <Nav.Link
+                    className="active"
+                    href="/assets/images/Muiasar-Al-Ani-Resume.pdf"
+                    download
+                  >
+                    Download Resume
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -49,3 +76,5 @@ const NavBar = ({ currentPage, handlePageChange }) => {
 };
 
 export default NavBar;
+
+// float-to-right navbar-collapse collapse show

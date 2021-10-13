@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import NavBar from './NavBar'
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
-// import Work from './pages/Work';
+import Work from './pages/Work';
 // import ContactMe from './pages/ContactMe';
 
 const PortfolioContainer = () => {
     const [currentPage, setCurrentPage] = useState('Home');
-    console.log( currentPage);
+
+
+ 
 
     const renderPage = () => {
         if (currentPage === 'Home') {
@@ -16,17 +18,22 @@ const PortfolioContainer = () => {
         if (currentPage === 'AboutMe') {
           return <AboutMe />;
         }
-        // if (currentPage === 'Work') {
-        //   return <Work />;
-        // }
+        if (currentPage === 'Work') {
+          return <Work />;
+        }
         // return <ContactMe />;
       };
 
-      const handlePageChange = (page) => setCurrentPage(page);
+      const handlePageChange = (page) => {
+        setCurrentPage(page)
+      };
+
+
+
 
     return (
         <>
-            <NavBar currentPage={currentPage} handlePageChange={handlePageChange}/>
+            <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
         </>
     )
