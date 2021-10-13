@@ -1,8 +1,6 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-//   Switch,
-//   Route,
 } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
@@ -17,7 +15,7 @@ const NavBar = ({ currentPage, handlePageChange }) => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav " className="float-to-right">
                 <Nav className="mr-auto ">
-                  <Nav.Link className={currentPage === 'Home' ? 'active active-page-link' : 'active'} href="/"  onClick={() => handlePageChange('Home')}>
+                  <Nav.Link className={currentPage === 'Home' ? 'active active-page-link' : 'active'} onClick={() => handlePageChange('Home')}>
                     Home
                   </Nav.Link>
                   <Nav.Link className="active" href="/work">
@@ -30,7 +28,7 @@ const NavBar = ({ currentPage, handlePageChange }) => {
                   >
                     LinkedIn
                   </Nav.Link>
-                  <Nav.Link className="active" href="/about-me">
+                  <Nav.Link className={currentPage === 'AboutMe' ? 'active active-page-link' : 'active'} onClick={() => handlePageChange('AboutMe')}>
                     About Me
                   </Nav.Link>
                   <Nav.Link className="active" href="/contact-me">
@@ -43,17 +41,6 @@ const NavBar = ({ currentPage, handlePageChange }) => {
               </Navbar.Collapse>
             </Navbar>
             <br />
-            {/* <Switch>
-              <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/about-us">
-                        <AboutUs />
-                    </Route>
-                    <Route path="/contact-us">
-                        <ContactUs />
-                    </Route>
-            </Switch> */}
           </Router>
         </div>
       </div>
