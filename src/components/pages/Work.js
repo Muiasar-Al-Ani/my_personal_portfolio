@@ -30,6 +30,7 @@ const Work = () => {
   const styles = {
     textFontSize: {
       fontSize: "24px",
+      paddingRight: "5px"
     },
   };
 
@@ -241,6 +242,14 @@ const Work = () => {
                 <li>Inquirer npm package</li>
               </ol>
               <div>
+              <a
+                  href="https://github.com/Muiasar-Al-Ani/Back-End-Employee-Tracker/blob/main/Assets/video/EmployeeTracker.gif"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
+                </a>
                 <a
                   href="https://github.com/Muiasar-Al-Ani/Back-End-Employee-Tracker"
                   target="_blank"
@@ -262,34 +271,45 @@ const Work = () => {
           </div>
         </div>
 
+        
         <div className="card bg-dark my-5 p-3 right-animation">
           <div className="row container">
-            <div className="col-lg-6 col-md-12">
-              <img width="100%" src="./assets/project-pics/readme.gif" alt="" />
+          <div className="col-lg-6 col-md-12 p-0">
+              <img
+                width="100%"
+                src="./assets/project-pics/fitness1.png"
+                alt=""
+              />
             </div>
             <div className="col-lg-6 col-md-12">
-              <h4>Back-End README Generator</h4>
+              <h4>MongoDB fitness tracker</h4>
               <p>
-                This is a Back-End application for generating a high quality
-                README.md files and user will be prompt with questions about the
-                info needed to be shown in the read me file and all the links
-                and video needed. The user needs to run npm install command in
-                the terminal to install the decencies needed for this
-                application after that the user needs to run the command "node
-                index.js" to run the app after that the user will be prompt and
-                the content of the README.md file will be generated dynamically
-                based on the user's answers.
+              This a full stack web app that uses MongoDb as it's database and was created using mongoose npm package. This app follow the javaScript MVC paradigm design and uses node, express and the mongoDB Atlas for the db hosting.
               </p>
               <h5>Technologies :</h5>
               <ol>
                 <li>JavaScript</li>
+                <li>Chart.js</li>
                 <li>Node.js</li>
-                <li>fs Node.js module</li>
-                <li>inquirer npm package</li>
+                <li>Express.js</li>
+                <li>MongoDb</li>
+                <li>Mongoose</li>
+                <li>MongoDB Atlas</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Semantic CSS Framework</li>
               </ol>
               <div>
+              <a
+                  href="https://cryptic-stream-26960.herokuapp.com/"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
+                </a>
                 <a
-                  href="https://github.com/Muiasar-Al-Ani/Backend-README-Generator"
+                  href="https://github.com/Muiasar-Al-Ani/mongo-db-fitness-tracker"
                   target="_blank"
                   className="waves-effect waves-light btn grey darken-2"
                   rel="noreferrer"
@@ -299,10 +319,14 @@ const Work = () => {
                 </a>
               </div>
             </div>
+            
+            
           </div>
         </div>
+
         <div className="card bg-dark my-5 p-3 left-animation">
           <div className="row container">
+            
             <div className="col-lg-6 col-md-12">
               <h4>Back-End E-Commerce RESTful API</h4>
               <p>
@@ -325,15 +349,20 @@ const Work = () => {
                 <li>Dotenv</li>
               </ol>
               <div>
+              <a
+                  href="https://github.com/Muiasar-Al-Ani/Back-End-E-Commerse-RESTful-API/blob/main/Assets/orm2.gif"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
+                </a>
                 <a
                   href="https://github.com/Muiasar-Al-Ani/Back-End-E-Commerse-RESTful-API"
                   target="_blank"
-                  className="waves-effect waves-light btn grey darken-2"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-github" style={styles.textFontSize}></i>
-                  GitHub
-                </a>
+                  className="waves-effect waves-light btn grey darken-2" rel="noreferrer"
+                  ><i className="fa fa-github" style={styles.textFontSize}> </i> 
+                   GitHub</a>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -345,6 +374,8 @@ const Work = () => {
             </div>
           </div>
         </div>
+
+
       </div>
     </main>
   );

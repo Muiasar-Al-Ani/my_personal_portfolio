@@ -37,16 +37,16 @@ a {
 }
 
 .my-image {
-    border-radius: 10px;
-  }
+  border-radius: 10px;
+}
 
-  .active-page-link {
-      color: teal !important;
-  }
+.active-page-link {
+  color: teal !important;
+}
 
-  .shadow-separation {
-    filter: drop-shadow(0px 0 3px rgba(148, 161, 73, 0.575)) !important;
-  }
+.shadow-separation {
+  filter: drop-shadow(0px 0 3px rgba(148, 161, 73, 0.575)) !important;
+}
 
 @media (orientation: landscape) and (min-width: 992px) {
   .float-to-right {
@@ -56,7 +56,7 @@ a {
 }
 
 @media (orientation: portrait) {
-    .my-image{
-        margin-bottom: 20px;
-    }
+  .my-image {
+    margin-bottom: 20px;
+  }
 }
