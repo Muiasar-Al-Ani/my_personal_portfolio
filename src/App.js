@@ -1,12 +1,5 @@
-import NavBar from './components/NavBar'
+import PortfolioContainer from "./components/PortfolioContainer";
 
-
-function App() {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  );
-}
+const App = () => <PortfolioContainer />;
 
 export default App;

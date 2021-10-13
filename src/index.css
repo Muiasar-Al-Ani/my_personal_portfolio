@@ -1,16 +1,38 @@
 body {
-    background-color: rgb(14, 13, 13);
-    color: white;
+  background-color: rgb(14, 13, 13);
+  color: white;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.home-page {
+  color: teal !important;
+}
+
+.btn:hover,
+a:hover {
+  color: rgb(14, 165, 165) !important;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+.my-image {
+    border-radius: 10px;
   }
 
-  .home-page {
+  .active-page-link {
       color: teal !important;
-      
   }
 
-  @media (orientation: landscape) and (min-width:992px){
-    .float-to-right{
-        display: flex;
-        justify-content: flex-end;
-    }
+@media (orientation: landscape) and (min-width: 992px) {
+  .float-to-right {
+    display: flex;
+    justify-content: flex-end;
   }
+}

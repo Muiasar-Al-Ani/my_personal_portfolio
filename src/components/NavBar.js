@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
-const NavBar = () => {
+const NavBar = ({ currentPage, handlePageChange }) => {
   return (
     <div>
       <div className="row">
@@ -17,7 +17,7 @@ const NavBar = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav " className="float-to-right">
                 <Nav className="mr-auto ">
-                  <Nav.Link className="active" href="/">
+                  <Nav.Link className={currentPage === 'Home' ? 'active active-page-link' : 'active'} href="/"  onClick={() => handlePageChange('Home')}>
                     Home
                   </Nav.Link>
                   <Nav.Link className="active" href="/work">
