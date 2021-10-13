@@ -9,7 +9,7 @@ const NavBar = ({ currentPage, handlePageChange}) => {
         <div className="col-md-12">
           <Router>
             <Navbar className="px-3" variant="dark" expand="lg" sticky="top">
-              <Navbar.Brand href="#home">Muiasar Al Ani</Navbar.Brand>
+              <Navbar.Brand>Muiasar Al Ani</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav" className="float-to-right">
                 <Nav className="mr-auto ">
@@ -54,12 +54,17 @@ const NavBar = ({ currentPage, handlePageChange}) => {
                   >
                     About Me
                   </Nav.Link>
-                  <Nav.Link className="active" href="/contact-me">
+                  <Nav.Link className={
+                      currentPage === "ContactMe"
+                        ? "active active-page-link"
+                        : "active"
+                    }
+                    onClick={() => handlePageChange("ContactMe")}>
                     Contact Me
                   </Nav.Link>
                   <Nav.Link
                     className="active"
-                    href="/assets/images/Muiasar-Al-Ani-Resume.pdf"
+                    href="assets/images/Muiasar-Al-Ani-Resume.pdf"
                     download
                   >
                     Download Resume

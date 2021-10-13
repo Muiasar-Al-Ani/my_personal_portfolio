@@ -17,6 +17,20 @@ a:hover {
   color: rgb(14, 165, 165) !important;
 }
 
+.btn {
+  color: teal;
+}
+
+#button-teal {
+  color: white;
+  background-color: teal;
+}
+
+#button-teal:hover {
+  color: white !important;
+  background-color: rgb(14, 165, 165);
+}
+
 a {
   text-decoration: none;
   color: teal;

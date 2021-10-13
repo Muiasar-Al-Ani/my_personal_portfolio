@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Work from './pages/Work';
-// import ContactMe from './pages/ContactMe';
+import ContactMe from './pages/ContactMe';
 
 const PortfolioContainer = () => {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -21,7 +21,7 @@ const PortfolioContainer = () => {
         if (currentPage === 'Work') {
           return <Work />;
         }
-        // return <ContactMe />;
+        return <ContactMe />;
       };
 
       const handlePageChange = (page) => {
