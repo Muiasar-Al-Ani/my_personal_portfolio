@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(14, 13, 13);
+    color: white;
+  }
+
+  .home-page {
+      color: teal !important;
+      
+  }
+
+  @media (orientation: landscape) and (min-width:992px){
+    .float-to-right{
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
