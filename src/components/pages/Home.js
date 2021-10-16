@@ -8,9 +8,9 @@ const Home = () => {
   });
 
   return (
-    <main className="container row home-main mx-auto mt-5">
+    <main className="container row home-main mx-auto mt-lg-5">
       <div className="col-lg-6 col-md-12">
-        <h5 className="name-text my-5 pt-5 divEl">
+        <h5 className="name-text my-lg-5 pt-lg-5 divEl">
           <span>Hi, I'm Muiasar.</span>
         </h5>
         <h1 className="job-text my-5 divEl">

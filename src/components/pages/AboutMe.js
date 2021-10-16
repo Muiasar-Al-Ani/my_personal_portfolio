@@ -26,7 +26,7 @@ const AboutMe = () => {
 
   return (
     <main>
-      <div className="container row home-main mx-auto mt-5">
+      <div className="container row home-main mx-auto mt-lg-5">
         <div className="col-lg-6 col-md-12">
           <h1 className="job-text my-lg-5 divEl">
             <span>About Me</span>

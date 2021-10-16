@@ -10,7 +10,7 @@ const ContactMe = () => {
     })
 
     return (
-        <main className="container row home-main mx-auto mt-5 ">
+        <main className="container row home-main mx-auto mt-lg-5 ">
         <div className="col-lg-6 col-md-12 ">
           
   
