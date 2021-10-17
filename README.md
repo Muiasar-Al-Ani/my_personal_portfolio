@@ -5,7 +5,6 @@
 - [Description](#description-)
 - [Licenses](#licenses-)
 - [Installation](#installation-)
-- [Usage](#usage-)
 - [Technologies](#technologies-)
 - [Screen shots](#screen-shots-)
 - [Credits](#credits-)
@@ -14,7 +13,7 @@
 
 ## Description :
 
-This is my personal professional portfolio which I created using React.js, JavaScript, Bootstrap, CSS, and Formspree as my email client, to show case my projects my contact information and some about me information
+This is my personal professional portfolio which I created using React.js, JavaScript, Bootstrap, CSS, GSAP 3 for animation and Formspree as my email client, to show case my projects my contact information and some about me information.
 
 ## Licenses :
 
@@ -37,11 +36,15 @@ npm install
 - Bootstrap.
 - CSS.
 - GSAP 3.
-- .
 
 ## Screen shots :
 
-### Here are screen shots of my deployed My Personal Portfolio App!![ScreenShot](a;sjdfs;ldjfka;)
+### Here are screen shots of my deployed My Personal Portfolio App!
+
+![ScreenShot](./public/assets/screenshots/MuiasarAlAni1.png)
+![ScreenShot](./public/assets/screenshots/MuiasarAlAni2.png)
+![ScreenShot](./public/assets/screenshots/MuiasarAlAni3.png)
+![ScreenShot](./public/assets/screenshots/MuiasarAlAni4.png)
 
 ## Credits :
 
