@@ -181,7 +181,7 @@ const AboutMe = () => {
 
         <div className="col-lg-1 col-md-2 col-sm-3 text-center">
           <img
-            src="./assets/icons/Materialize.svg"
+            src="./assets/icons/materialize.svg"
             className="shadow-separation"
             width="50px"
             alt="Materialize"
