@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
-const Home = () => {
+const Home = ({ handlePageChange }) => {
   useEffect(() => {
     gsap.from(".divEl", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
     gsap.from(".my-image", { opacity: 0, duration: 2, x: -50, stagger: 0.6 });
@@ -24,9 +24,12 @@ const Home = () => {
           </span>
         </h6>
         <br />
-        <a href="about-me.html" className="divEl">
+        <div
+          onClick={() => handlePageChange("AboutMe")}
+          className="divEl devLink"
+        >
           Learn More{">"}{" "}
-        </a>
+        </div>
       </div>
       <img
         src="./assets/images/muiasar-photo.jpg"

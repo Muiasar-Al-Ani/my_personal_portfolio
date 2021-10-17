@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-const AboutMe = () => {
+const AboutMe = ({ handlePageChange }) => {
   useEffect(() => {
     gsap.from(".divEl", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
     gsap.from(".my-image", { opacity: 0, duration: 2, x: -50, stagger: 0.6 });
@@ -45,9 +45,12 @@ const AboutMe = () => {
             Building Dynamic interactive websites.
           </h6>
           <br />
-          <a href="./contact-me.html" className="divEl">
-            Contact Me {">"}
-          </a>
+          <div
+            onClick={() => handlePageChange("ContactMe")}
+            className="divEl devLink"
+          >
+            Contact Me{">"}
+          </div>
         </div>
         <img
           className="col-lg-6 col-md-12 my-image p-0"
