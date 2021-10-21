@@ -164,6 +164,26 @@ const AboutMe = ({ handlePageChange }) => {
 
         <div className="col-lg-1 col-md-2 col-sm-3 text-center">
           <img
+            src="./assets/icons/graphql.svg"
+            className="shadow-separation"
+            width="50px"
+            alt="Graphql"
+          />
+          <p className="py-2">GraphQL</p>
+        </div>
+
+        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
+          <img
+            src="./assets/icons/redux.svg"
+            className="shadow-separation"
+            width="50px"
+            alt="Redux"
+          />
+          <p className="py-2">Redux</p>
+        </div>
+
+        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
+          <img
             src="./assets/icons/mongodb.svg"
             className="shadow-separation"
             height="50px"
