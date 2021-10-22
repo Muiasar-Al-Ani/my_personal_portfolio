@@ -241,6 +241,26 @@ const AboutMe = ({ handlePageChange }) => {
           />
           <p className="py-2 mb-1">Python</p>
         </div>
+
+        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
+          <img
+            src="./assets/icons/django.svg"
+            className="shadow-separation"
+            width="50px"
+            alt="Django"
+          />
+          <p className="py-2 mb-1">Django</p>
+        </div>
+
+        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
+          <img
+            src="./assets/icons/flask.svg"
+            className="shadow-separation"
+            width="50px"
+            alt="Flask"
+          />
+          <p className="py-2 mb-1">Flask</p>
+        </div>
       </div>
     </main>
   );
