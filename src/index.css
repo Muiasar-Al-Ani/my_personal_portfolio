@@ -53,6 +53,30 @@ a {
   cursor: pointer;
 }
 
+.skill-badge {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid teal;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: teal;
+}
+
+.card.bg-dark {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.text-muted {
+  color: rgb(160, 160, 160) !important;
+}
+
 @media (orientation: landscape) and (min-width: 992px) {
   .float-to-right {
     display: flex;

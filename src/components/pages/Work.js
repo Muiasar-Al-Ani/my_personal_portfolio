@@ -2,6 +2,33 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+const experience = [
+  {
+    title: "Software Engineer",
+    company: "Sizeo",
+    dates: "Mar 2024 – Present",
+    location: "Durham, NC (Hybrid)",
+    bullets: [
+      "Serve as a full-stack engineer across a retail optimization platform, owning both backend services and frontend features.",
+      "Built the complete front-end for an internal performance analytics dashboard, delivered ahead of schedule.",
+      "Resolved dependency and code-scanning vulnerabilities across Node.js and Python/serverless codebases to support SOC 2 compliance.",
+      "Built and continuously improved internal deployment tooling, speeding up and increasing the accuracy of client deployment preparation.",
+      "Developed an LLM-powered analytics assistant using the Anthropic Claude API with agentic tool-calling.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company: "Quantworks, Inc.",
+    dates: "Nov 2021 – Mar 2024",
+    location: "Chapel Hill, NC (Hybrid)",
+    bullets: [
+      "Developed a web application with advanced data-grid components for retail size and inventory management, deployed on cloud infrastructure.",
+      "Built and maintained a secure communication platform with segregated access controls, spanning backend APIs, a web portal, and a mobile client.",
+      "Contributed to a workflow orchestration pipeline coordinating optimization jobs across microservices.",
+    ],
+  },
+];
+
 const Work = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -30,13 +57,39 @@ const Work = () => {
   const styles = {
     textFontSize: {
       fontSize: "24px",
-      paddingRight: "5px"
+      paddingRight: "5px",
     },
   };
 
   return (
     <main className="container m-5 mx-auto">
       <div className="container">
+        <h1 className="mb-4">Professional Experience</h1>
+
+        {experience.map((job, i) => (
+          <div
+            className={`card bg-dark my-4 p-4 ${
+              i % 2 === 0 ? "right-animation" : "left-animation"
+            }`}
+            key={job.company}
+          >
+            <div className="d-flex justify-content-between flex-wrap">
+              <h4 className="mb-0">
+                {job.title} &middot; {job.company}
+              </h4>
+              <span className="text-muted">{job.dates}</span>
+            </div>
+            <p className="text-muted mb-3">{job.location}</p>
+            <ul>
+              {job.bullets.map(bullet => (
+                <li key={bullet.slice(0, 20)}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        <h1 className="mt-5 mb-4">Personal Projects</h1>
+
         <div className="card bg-dark my-5 p-3 right-animation">
           <div className="row container">
             <div className="col-lg-6 col-md-12">
@@ -54,33 +107,17 @@ const Work = () => {
             <div className="col-lg-6 col-md-12">
               <h4>CodeSocial</h4>
               <p>
-                Code Social is a full stack social network application for
-                coders who are new to the industry and looking for work and
-                information about companies and the interview process. The site
-                will allow users to post information in various categories
-                (Company Info, Interview Advice, Practice Code for Interviews),
-                comment on other users posts, update posts, delete posts, and
-                upvote posts.
+                A full stack social network application for coders who are
+                new to the industry and looking for work and information
+                about companies and the interview process.
               </p>
-              <h5>Technologies :</h5>
+              <h5>Technologies:</h5>
               <ol>
                 <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Handlebars.js</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
-                <li>Sequelize.js</li>
-                <li>Mysql</li>
-                <li>Mysql2 npm package</li>
-                <li>Express-session</li>
-                <li>Connect-session-sequelize</li>
-                <li>Dotenv</li>
-                <li>Husky</li>
-                <li>Prettier</li>
-                <li>Charts.js</li>
-                <li>Bcrypt</li>
-                <li>Adzuna API</li>
-                <li>Heroku</li>
+                <li>Handlebars.js</li>
+                <li>MySQL / Sequelize.js</li>
               </ol>
               <div>
                 <a
@@ -88,9 +125,9 @@ const Work = () => {
                   target="_blank"
                   className="btn"
                   rel="noreferrer"
-                  // eslint-disable-next-line react/style-prop-object
                 >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
+                  <i className="fa fa-eye" style={styles.textFontSize}></i>{" "}
+                  Demo
                 </a>
                 <a
                   href="https://github.com/Muiasar-Al-Ani/CodeSocial"
@@ -109,91 +146,18 @@ const Work = () => {
         <div className="card bg-dark my-5 p-3 left-animation">
           <div className="row container">
             <div className="col-lg-6 col-md-12">
-              <h4>Tech Blog</h4>
-              <p>
-                This is a full stack web application CMS-style sit similar to a
-                Wordpress site. This app follows the MVC paradigm in its
-                architectural structure, with the use of Handlebars.js as the
-                templating engine with Sequelize for ORM and express-session
-                package for authentication and the use of cookies to stay logged
-                in.
-              </p>
-              <h5>Technologies :</h5>
-              <ol>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Handlebars.js</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Sequelize.js</li>
-                <li>Mysql</li>
-                <li>Mysql2 npm package</li>
-                <li>Express-session</li>
-                <li>Connect-session-sequelize</li>
-                <li>Dotenv</li>
-                <li>Bcrypt</li>
-                <li>Heroku</li>
-              </ol>
-              <div>
-                <a
-                  href="https://fathomless-citadel-98626.herokuapp.com/"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
-                </a>
-                <a
-                  href="https://github.com/Muiasar-Al-Ani/Tech-Blog"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-github" style={styles.textFontSize}></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <img
-                width="100%"
-                className="pt-3"
-                src="./assets/project-pics/techBlog.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="card bg-dark my-5 p-3 right-animation">
-          <div className="row container">
-            <div className="col-lg-6 col-md-12">
-              <img
-                width="100%"
-                className="pt-3"
-                src="./assets/project-pics/trailr.png"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-6 col-md-12">
               <h4>Trailr</h4>
               <p>
-                A Front-End web application for searching for movies. Users can
-                search a movie by title, select which movie they're interested
-                in, and view information about the movie such as its IMDB critic
-                rating, trailer, runtime, if the movie is on Netflix to stream,
-                and other related material.
+                A front-end web application for searching movies. Users can
+                search by title and view information such as IMDB rating,
+                trailer, runtime, and streaming availability.
               </p>
-              <h5>Technologies :</h5>
+              <h5>Technologies:</h5>
               <ol>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>Materialize CSS Library</li>
                 <li>JavaScript</li>
-                <li>Open Movie Database (OMDb) API</li>
-                <li>Google Youtube Data API v3</li>
-                <li>Streaming-Availability API via RapidAPI</li>
-                <li>The Movie Database (TMDB) API</li>
+                <li>HTML / CSS</li>
+                <li>OMDB API, TMDB API</li>
+                <li>YouTube Data API v3</li>
               </ol>
               <div>
                 <a
@@ -202,7 +166,8 @@ const Work = () => {
                   className="btn"
                   rel="noreferrer"
                 >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
+                  <i className="fa fa-eye" style={styles.textFontSize}></i>{" "}
+                  Demo
                 </a>
                 <a
                   href="https://github.com/Muiasar-Al-Ani/Trailr"
@@ -215,167 +180,16 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="card bg-dark my-5 p-3 left-animation">
-          <div className="row container">
-            <div className="col-lg-6 col-md-12">
-              <h4>Back-End Employee Tracker</h4>
-              <p>
-                This is a Back-End Employee Tracker that was created using a SQL
-                database with MySQL, and used inquirer npm package to get the
-                user input and manipulate the database based on that input. The
-                User can add a new employee to the database, add new role, add
-                new department, view all departments stored on the database,
-                view all employees, view all Roles and more.
-              </p>
-              <h5>Technologies :</h5>
-              <ol>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>SQL</li>
-                <li>MySQL</li>
-                <li>MySQL2 npm package</li>
-                <li>Promise-sql npm package</li>
-                <li>Console.table npm package</li>
-                <li>Inquirer npm package</li>
-              </ol>
-              <div>
-              <a
-                  href="https://github.com/Muiasar-Al-Ani/Back-End-Employee-Tracker/blob/main/Assets/video/EmployeeTracker.gif"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
-                </a>
-                <a
-                  href="https://github.com/Muiasar-Al-Ani/Back-End-Employee-Tracker"
-                  target="_blank"
-                  className="waves-effect waves-light btn grey darken-2"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-github" style={styles.textFontSize}></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
             <div className="col-lg-6 col-md-12">
               <img
                 width="100%"
-                src="./assets/project-pics/EmployeeTracker.gif"
+                className="pt-3"
+                src="./assets/project-pics/trailr.png"
                 alt=""
               />
             </div>
           </div>
         </div>
-
-        
-        <div className="card bg-dark my-5 p-3 right-animation">
-          <div className="row container">
-          <div className="col-lg-6 col-md-12 p-0">
-              <img
-                width="100%"
-                src="./assets/project-pics/fitness1.png"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <h4>MongoDB fitness tracker</h4>
-              <p>
-              This a full stack web app that uses MongoDb as it's database and was created using mongoose npm package. This app follow the javaScript MVC paradigm design and uses node, express and the mongoDB Atlas for the db hosting.
-              </p>
-              <h5>Technologies :</h5>
-              <ol>
-                <li>JavaScript</li>
-                <li>Chart.js</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDb</li>
-                <li>Mongoose</li>
-                <li>MongoDB Atlas</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Semantic CSS Framework</li>
-              </ol>
-              <div>
-              <a
-                  href="https://cryptic-stream-26960.herokuapp.com/"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
-                </a>
-                <a
-                  href="https://github.com/Muiasar-Al-Ani/mongo-db-fitness-tracker"
-                  target="_blank"
-                  className="waves-effect waves-light btn grey darken-2"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-github" style={styles.textFontSize}></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-
-        <div className="card bg-dark my-5 p-3 left-animation">
-          <div className="row container">
-            
-            <div className="col-lg-6 col-md-12">
-              <h4>Back-End E-Commerce RESTful API</h4>
-              <p>
-                This is a Back-End base for an E-Commerce website, based on
-                RESTful API that was created using the Sequelize promise-based
-                Node.js ORM for MySql. Users can Create, Read, Update and Delete
-                data from the database. There are four models built in the app
-                Categories, Products, Tags, and ProductTags that have
-                relationships such as one-to-many relationships and many-to-many
-                relationships.
-              </p>
-              <h5>Technologies :</h5>
-              <ol>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>SQL</li>
-                <li>MySQL</li>
-                <li>Sequelize.js</li>
-                <li>Mysql2 npm package</li>
-                <li>Dotenv</li>
-              </ol>
-              <div>
-              <a
-                  href="https://github.com/Muiasar-Al-Ani/Back-End-E-Commerse-RESTful-API/blob/main/Assets/orm2.gif"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i> Demo
-                </a>
-                <a
-                  href="https://github.com/Muiasar-Al-Ani/Back-End-E-Commerse-RESTful-API"
-                  target="_blank"
-                  className="waves-effect waves-light btn grey darken-2" rel="noreferrer"
-                  ><i className="fa fa-github" style={styles.textFontSize}> </i> 
-                   GitHub</a>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <img
-                width="100%"
-                src="./assets/project-pics/e-commerce.gif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </main>
   );

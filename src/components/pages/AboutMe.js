@@ -2,6 +2,27 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+const skills = [
+  { icon: "./assets/icons/python.svg", label: "Python" },
+  { icon: "./assets/icons/js.svg", label: "JavaScript" },
+  { badge: "TS", label: "TypeScript" },
+  { icon: "./assets/icons/react.svg", label: "React" },
+  { badge: "ng", label: "Angular" },
+  { icon: "./assets/icons/node.svg", label: "Node.js" },
+  { icon: "./assets/icons/express.png", label: "Express.js" },
+  { badge: "AWS", label: "AWS Lambda" },
+  { badge: "▢", label: "Docker" },
+  { icon: "./assets/icons/sql.svg", label: "SQL" },
+  { badge: "PG", label: "PostgreSQL" },
+  { icon: "./assets/icons/mysql.svg", label: "MySQL" },
+  { icon: "./assets/icons/mongodb.svg", label: "MongoDB" },
+  { icon: "./assets/icons/git.svg", label: "Git" },
+  { icon: "./assets/icons/html.svg", label: "HTML5" },
+  { icon: "./assets/icons/css.svg", label: "CSS3" },
+  { badge: "AI", label: "Claude API / LLMs" },
+  { badge: "∑", label: "Optimization (Gurobi)" },
+];
+
 const AboutMe = ({ handlePageChange }) => {
   useEffect(() => {
     gsap.from(".divEl", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
@@ -32,17 +53,24 @@ const AboutMe = ({ handlePageChange }) => {
             <span>About Me</span>
           </h1>
           <h6 className="description-text divEl">
-            Computing has held a life-long fascination for me. What started as
-            an interest in building my first computer developed into a growing
-            desire to understand how a compilation of simple ideas and
-            components can interact to produce a complex and adaptable entity. I
-            have always found Video games and interactive websites enticing.
-            When I browse a skilfully designed website, it peaks my curiosity
-            and I want to understand how the engineers wrote such a flawless
-            code. This fascination is what drove my decision to join the UNC
-            Chapel Hill Coding Bootcamp to make coding my career as a web
-            developer. I'm a team player, who love's JavaScript Debugging, and
-            Building Dynamic interactive websites.
+            Computing has held a life-long fascination for me &mdash; from
+            building my first computer to wondering how a compilation of
+            simple ideas and components can interact to produce something as
+            complex and adaptable as a finished piece of software. That
+            curiosity took me from the UNC Chapel Hill Coding Boot Camp into
+            five years as a professional software engineer, building
+            full-stack web applications, serverless backends, and
+            optimization systems for retail and legal-tech platforms. More
+            recently I've been expanding into applied AI &mdash; building
+            LLM-powered tooling and earning Data Scientist and AI Associate
+            credentials through NC State University's AI Academy.
+            <br />
+            <br />
+            I bring an unconventional path into tech: an MD with a background
+            in abdominal surgery, and years managing high-volume restaurant
+            operations. That combination shows up in how I approach
+            problem-solving under pressure, work cross-functionally, and stay
+            focused on the end result.
           </h6>
           <br />
           <div
@@ -63,204 +91,26 @@ const AboutMe = ({ handlePageChange }) => {
         <h1>Skills</h1>
       </div>
       <div className="row container mx-auto mt-5 align-items-end">
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
-          <img
-            src="./assets/icons/html.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="HTML5"
-          />
-          <p className="py-2">HTML5</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/css.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="CSS3"
-          />
-          <p className="py-2">CSS3</p>
-        </div>
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/js.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="JavaScript"
-          />
-          <p className="py-2">JavaScript</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/react.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="React"
-          />
-          <p className="py-2">React</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/jquery.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="jQuery"
-          />
-          <p className="py-2">jQuery</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/node.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Node.js"
-          />
-          <p className="py-2">Node.js</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/express.png"
-            className="shadow-separation"
-            width="50px"
-            alt="Express.js"
-          />
-          <p className="py-2">Express.js</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/sql.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="SQL"
-          />
-          <p className="py-2">SQL</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/mysql.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="My Sql"
-          />
-          <p className="py-2">My Sql</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/git.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Git"
-          />
-          <p className="py-2">Git</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/graphql.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Graphql"
-          />
-          <p className="py-2">GraphQL</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/redux.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Redux"
-          />
-          <p className="py-2">Redux</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/mongodb.svg"
-            className="shadow-separation"
-            height="50px"
-            alt="MongoDB"
-          />
-          <p className="py-2">MongoDB</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/bootstrap.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="BootStrap"
-          />
-          <p className="py-2">BootStrap</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/materialize.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Materialize"
-          />
-          <p className="py-2">Materialize</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center">
-          <img
-            src="./assets/icons/vue.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Vue.js"
-          />
-          <p className="py-2">Vue.js</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
-          <img
-            src="./assets/icons/php.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="PHP"
-          />
-          <p className="py-2 mb-1">PHP</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
-          <img
-            src="./assets/icons/python.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Python"
-          />
-          <p className="py-2 mb-1">Python</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
-          <img
-            src="./assets/icons/django.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Django"
-          />
-          <p className="py-2 mb-1">Django</p>
-        </div>
-
-        <div className="col-lg-1 col-md-2 col-sm-3 text-center ">
-          <img
-            src="./assets/icons/flask.svg"
-            className="shadow-separation"
-            width="50px"
-            alt="Flask"
-          />
-          <p className="py-2 mb-1">Flask</p>
-        </div>
+        {skills.map(skill => (
+          <div
+            className="col-lg-1 col-md-2 col-sm-3 text-center"
+            key={skill.label}
+          >
+            {skill.icon ? (
+              <img
+                src={skill.icon}
+                className="shadow-separation"
+                width="50px"
+                alt={skill.label}
+              />
+            ) : (
+              <div className="skill-badge shadow-separation">
+                {skill.badge}
+              </div>
+            )}
+            <p className="py-2">{skill.label}</p>
+          </div>
+        ))}
       </div>
     </main>
   );

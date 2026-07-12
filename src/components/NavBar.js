@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React, { Fragment } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
 const NavBar = ({ currentPage, handlePageChange}) => {
@@ -7,7 +6,7 @@ const NavBar = ({ currentPage, handlePageChange}) => {
     <div>
       <div className="row">
         <div className="col-md-12">
-          <Router>
+          <Fragment>
             <Navbar className="px-3" variant="dark" expand="lg" sticky="top">
               <Navbar.Brand>Muiasar Al Ani</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,7 +27,7 @@ const NavBar = ({ currentPage, handlePageChange}) => {
                         : "active"
                     }
                     onClick={() => handlePageChange("Work")}>
-                    Work
+                    Experience
                   </Nav.Link>
                   <Nav.Link
                     className="active"
@@ -73,7 +72,7 @@ const NavBar = ({ currentPage, handlePageChange}) => {
               </Navbar.Collapse>
             </Navbar>
             <br />
-          </Router>
+          </Fragment>
         </div>
       </div>
     </div>
