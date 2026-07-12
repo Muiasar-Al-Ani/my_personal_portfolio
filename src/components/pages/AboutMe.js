@@ -4,23 +4,24 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const skills = [
   { icon: "./assets/icons/python.svg", label: "Python" },
+  { badge: "AI", label: "Claude API / LLMs" },
+  { fa: "fa-cogs", label: "Machine Learning" },
+  { badge: "∑", label: "Optimization (Gurobi)" },
+  { icon: "./assets/icons/aws.svg", label: "AWS Lambda" },
+  { icon: "./assets/icons/docker.svg", label: "Docker" },
+  { icon: "./assets/icons/postgresql.svg", label: "PostgreSQL" },
+  { icon: "./assets/icons/mysql-fix.svg", label: "MySQL" },
+  { fa: "fa-database", label: "SQL" },
   { icon: "./assets/icons/js.svg", label: "JavaScript" },
-  { badge: "TS", label: "TypeScript" },
+  { icon: "./assets/icons/typescript.svg", label: "TypeScript" },
   { icon: "./assets/icons/react.svg", label: "React" },
-  { badge: "ng", label: "Angular" },
+  { icon: "./assets/icons/angular.svg", label: "Angular" },
   { icon: "./assets/icons/node.svg", label: "Node.js" },
   { icon: "./assets/icons/express.png", label: "Express.js" },
-  { badge: "AWS", label: "AWS Lambda" },
-  { badge: "▢", label: "Docker" },
-  { icon: "./assets/icons/sql.svg", label: "SQL" },
-  { badge: "PG", label: "PostgreSQL" },
-  { icon: "./assets/icons/mysql.svg", label: "MySQL" },
   { icon: "./assets/icons/mongodb.svg", label: "MongoDB" },
   { icon: "./assets/icons/git.svg", label: "Git" },
   { icon: "./assets/icons/html.svg", label: "HTML5" },
   { icon: "./assets/icons/css.svg", label: "CSS3" },
-  { badge: "AI", label: "Claude API / LLMs" },
-  { badge: "∑", label: "Optimization (Gurobi)" },
 ];
 
 const AboutMe = ({ handlePageChange }) => {
@@ -60,17 +61,11 @@ const AboutMe = ({ handlePageChange }) => {
             curiosity took me from the UNC Chapel Hill Coding Boot Camp into
             five years as a professional software engineer, building
             full-stack web applications, serverless backends, and
-            optimization systems for retail and legal-tech platforms. More
-            recently I've been expanding into applied AI &mdash; building
-            LLM-powered tooling and earning Data Scientist and AI Associate
-            credentials through NC State University's AI Academy.
-            <br />
-            <br />
-            I bring an unconventional path into tech: an MD with a background
-            in abdominal surgery, and years managing high-volume restaurant
-            operations. That combination shows up in how I approach
-            problem-solving under pressure, work cross-functionally, and stay
-            focused on the end result.
+            optimization systems for retail and legal-tech platforms in
+            Python. More recently I've been expanding into applied AI &mdash;
+            building LLM-powered tooling in Python and earning Data Scientist
+            and AI Associate credentials through NC State University's AI
+            Academy.
           </h6>
           <br />
           <div
@@ -96,18 +91,13 @@ const AboutMe = ({ handlePageChange }) => {
             className="col-lg-1 col-md-2 col-sm-3 text-center"
             key={skill.label}
           >
-            {skill.icon ? (
-              <img
-                src={skill.icon}
-                className="shadow-separation"
-                width="50px"
-                alt={skill.label}
-              />
-            ) : (
-              <div className="skill-badge shadow-separation">
-                {skill.badge}
-              </div>
-            )}
+            <div className="skill-chip shadow-separation">
+              {skill.icon && (
+                <img src={skill.icon} alt={skill.label} />
+              )}
+              {skill.fa && <i className={`fa ${skill.fa}`}></i>}
+              {skill.badge && <span>{skill.badge}</span>}
+            </div>
             <p className="py-2">{skill.label}</p>
           </div>
         ))}

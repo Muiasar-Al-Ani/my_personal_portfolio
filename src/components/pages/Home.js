@@ -18,12 +18,12 @@ const Home = ({ handlePageChange }) => {
         </h1>
         <h6 className="description-text divEl">
           <span>
-            5 years building production web apps, serverless backends, and
-            optimization systems &mdash; now expanding into applied AI.
+            5 years building production systems in Python &mdash; now
+            focused on AI and machine learning.
           </span>
           <br />
           <span>
-            Python &middot; AWS &middot; React / Angular &middot; LLMs
+            Python &middot; Machine Learning &middot; LLMs &middot; AWS
           </span>
         </h6>
         <br />

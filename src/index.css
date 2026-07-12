@@ -53,17 +53,29 @@ a {
   cursor: pointer;
 }
 
-.skill-badge {
-  width: 50px;
-  height: 50px;
+.skill-chip {
+  width: 56px;
+  height: 56px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid teal;
-  border-radius: 8px;
-  font-size: 12px;
+  border: 1px solid rgba(0, 128, 128, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 13px;
   font-weight: 600;
+  color: teal;
+}
+
+.skill-chip img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.skill-chip i {
+  font-size: 20px;
   color: teal;
 }
 
