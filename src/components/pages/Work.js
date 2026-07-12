@@ -121,15 +121,6 @@ const Work = () => {
               </ol>
               <div>
                 <a
-                  href="https://secure-meadow-77946.herokuapp.com/"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i>{" "}
-                  Demo
-                </a>
-                <a
                   href="https://github.com/Muiasar-Al-Ani/CodeSocial"
                   target="_blank"
                   className="waves-effect waves-light btn grey darken-2"
@@ -160,15 +151,6 @@ const Work = () => {
                 <li>YouTube Data API v3</li>
               </ol>
               <div>
-                <a
-                  href="https://muiasar-al-ani.github.io/Trailr/"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-eye" style={styles.textFontSize}></i>{" "}
-                  Demo
-                </a>
                 <a
                   href="https://github.com/Muiasar-Al-Ani/Trailr"
                   target="_blank"
