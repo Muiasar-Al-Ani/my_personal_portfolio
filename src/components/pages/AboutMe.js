@@ -85,12 +85,9 @@ const AboutMe = ({ handlePageChange }) => {
       <div className="row container mx-auto mt-5">
         <h1>Skills</h1>
       </div>
-      <div className="row container mx-auto mt-5 align-items-end">
+      <div className="container skills-grid mt-5">
         {skills.map(skill => (
-          <div
-            className="col-lg-1 col-md-2 col-sm-3 text-center"
-            key={skill.label}
-          >
+          <div className="skill-item text-center" key={skill.label}>
             <div className="skill-chip shadow-separation">
               {skill.icon && (
                 <img src={skill.icon} alt={skill.label} />

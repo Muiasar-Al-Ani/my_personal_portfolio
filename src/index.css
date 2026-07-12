@@ -53,6 +53,22 @@ a {
   cursor: pointer;
 }
 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 16px;
+}
+
+.skill-item {
+  flex: 0 0 auto;
+}
+
+.skill-item p {
+  white-space: nowrap;
+  font-size: 12.5px;
+  margin-bottom: 0;
+}
+
 .skill-chip {
   width: 56px;
   height: 56px;
