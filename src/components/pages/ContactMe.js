@@ -73,8 +73,8 @@ const ContactMe = () => {
         </h4>
         <h4 className="mb-3 elem-2">
           Email:{" "}
-          <a href="mailto:muiasar2012@gmail.com">
-            <span className="px-2">muiasar2012@gmail.com</span>
+          <a href="mailto:muiasaralani@gmail.com">
+            <span className="px-2">muiasaralani@gmail.com</span>
           </a>
         </h4>
         <h4 className="mb-3 elem-2">
