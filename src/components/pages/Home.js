@@ -14,7 +14,7 @@ const Home = ({ handlePageChange }) => {
           <span>Hi, I'm Muiasar.</span>
         </h5>
         <h1 className="job-text my-5 divEl">
-          <span>Full Stack Software Engineer</span>
+          <span>Senior Full Stack Software Engineer</span>
         </h1>
         <h6 className="description-text divEl">
           <span>
