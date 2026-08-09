@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const experience = [
   {
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     company: "Sizeo, Inc.",
     dates: "Mar 2024 – Present",
     location: "Durham, NC (Hybrid)",
