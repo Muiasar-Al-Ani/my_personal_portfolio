@@ -53,20 +53,36 @@ const AboutMe = ({ handlePageChange }) => {
           <h1 className="job-text my-lg-5 divEl">
             <span>About Me</span>
           </h1>
-          <h6 className="description-text divEl">
+          <p className="description-text divEl mb-3">
             Computing has held a life-long fascination for me &mdash; from
             building my first computer to wondering how a compilation of
             simple ideas and components can interact to produce something as
             complex and adaptable as a finished piece of software. That
-            curiosity took me from the UNC Chapel Hill Coding Boot Camp into
-            five years as a professional software engineer, building
-            full-stack web applications, serverless backends, and
-            optimization systems for retail and legal-tech platforms in
-            Python. More recently I've been expanding into applied AI &mdash;
-            building LLM-powered tooling in Python and earning Data Scientist
-            and AI Associate credentials through NC State University's AI
-            Academy.
-          </h6>
+            curiosity, paired with a genuine love for well-designed,
+            interactive experiences, is what drove me to make coding my
+            career.
+          </p>
+          <p className="description-text divEl mb-3">
+            I started with the UNC-Chapel Hill Full Stack Web Development
+            Boot Camp, then spent over two years as a Software Engineer at
+            Quantworks, Inc., before moving to my current role as a Senior
+            Software Engineer at Sizeo, where I work across the stack
+            building and maintaining software infrastructure.
+          </p>
+          <p className="description-text divEl mb-3">
+            More recently, I&apos;ve been expanding into AI and data science,
+            completing the Data Scientist and Artificial Intelligence
+            Associate credentials through NC State University&apos;s AI
+            Academy &mdash; and I&apos;m actively looking to bring that
+            knowledge into practical, production-grade software.
+          </p>
+          <p className="description-text divEl mb-3">
+            I bring an unconventional path into tech: an MD with a background
+            in abdominal surgery, and years managing high-volume restaurant
+            operations in Dubai and at RDU airport. That combination gives me
+            a strong foundation in problem-solving under pressure, working
+            cross-functionally, and staying focused on the end result.
+          </p>
           <br />
           <div
             onClick={() => handlePageChange("ContactMe")}
